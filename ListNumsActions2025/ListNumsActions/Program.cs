@@ -23,14 +23,11 @@
                         Console.WriteLine(string.Join(" ", nums));
                         break;
                     case "contains":
-                        
-                        //TODO
+                        int containsValue = int.Parse(cmd[1]);
+                        Console.WriteLine(nums.Contains(containsValue));
                         break;
 
-
-                    //TO DO
-                    default:
-                        break;
+                   
                 }
             }
         }
