@@ -22,12 +22,17 @@
                     case "print":
                         Console.WriteLine(string.Join(" ", nums));
                         break;
+
                     case "contains":
                         int containsValue = int.Parse(cmd[1]);
                         Console.WriteLine(nums.Contains(containsValue));
                         break;
 
-                   
+                    case "del":
+                        int toDelete = int.Parse(cmd[1]);
+                        nums.Remove(toDelete);
+                        break;
+
                 }
             }
         }
