@@ -60,6 +60,13 @@ namespace ListNumsActions
                     case "countodds":
                         Console.WriteLine(nums.Count(x => x % 2 != 0));
                         break;
+                    case "sumall":
+                        Console.WriteLine(nums.Sum());
+                        break;
+
+                    default:
+                        Console.WriteLine("Невалидна команда.");
+                        break;
                 }
             }
         }
