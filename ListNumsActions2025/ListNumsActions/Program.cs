@@ -22,14 +22,9 @@
                     case "print":
                         Console.WriteLine(string.Join(" ", nums));
                         break;
-                    case "contains":
-                        
-                        //TODO
-                        break;
-
-
-                    //TO DO
-                    default:
+                    case "del":
+                        int toDelete = int.Parse(cmd[1]);
+                        nums.Remove(toDelete);
                         break;
                 }
             }
