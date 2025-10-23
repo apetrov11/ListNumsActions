@@ -48,6 +48,11 @@
                         }
                         break;
 
+                    case "countodds":
+                        Console.WriteLine(nums.Count(x => x % 2 != 0));
+                        break;
+
+
                 }
             }
         }
