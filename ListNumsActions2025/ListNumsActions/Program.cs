@@ -33,6 +33,12 @@
                         nums.Remove(toDelete);
                         break;
 
+                    case "add":
+                        int addValue = int.Parse(cmd[1]);
+                        int sum = nums.Sum();
+                        nums.Add(addValue + sum);
+                        break;
+
                 }
             }
         }
