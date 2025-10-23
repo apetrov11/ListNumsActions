@@ -60,6 +60,10 @@ namespace ListNumsActions
                     case "countodds":
                         Console.WriteLine(nums.Count(x => x % 2 != 0));
                         break;
+
+                    case "countevens":
+                        Console.WriteLine(nums.Count(x => x % 2 == 0));
+                        break;
                 }
             }
         }
