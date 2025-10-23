@@ -27,16 +27,25 @@
                         int containsValue = int.Parse(cmd[1]);
                         Console.WriteLine(nums.Contains(containsValue));
                         break;
-
                     case "del":
                         int toDelete = int.Parse(cmd[1]);
                         nums.Remove(toDelete);
                         break;
 
+
                     case "add":
                         int addValue = int.Parse(cmd[1]);
                         int sum = nums.Sum();
                         nums.Add(addValue + sum);
+                        break;
+
+
+                    case "remove":
+                        int removeIndex = int.Parse(cmd[1]);
+                        if (removeIndex >= 0 && removeIndex < nums.Count)
+                        {
+                            nums.RemoveAt(removeIndex);
+                        }
                         break;
 
                 }
